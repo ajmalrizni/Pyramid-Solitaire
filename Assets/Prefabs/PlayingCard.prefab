@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 551156061}
   - component: {fileID: 551156062}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: CardUnderShsdow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 6328797462898297707}
   - component: {fileID: 6391300303066116362}
   m_Layer: 0
-  m_Name: GameObject (3)
+  m_Name: CardOutline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 4287921432867239057}
   - component: {fileID: 8479162629851203577}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: CardFace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 2906365121089755806}
   - component: {fileID: 4400730751086414737}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: CardShadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -506,6 +506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  solitaire: {fileID: 0}
   playerInput: {fileID: 0}
   cardRenderer: {fileID: 0}
   startPosition: {x: 0, y: 0, z: 0}
@@ -515,11 +516,11 @@ MonoBehaviour:
   currentDeck: {fileID: 0}
   hoverable: 0
   faceUp: 0
-  row: 0
-  col: 0
   wasted: 0
   pyramidRow: 0
   pyramidColumn: 0
+  suit: 0
+  value: 0
 --- !u!50 &7970382023101471280
 Rigidbody2D:
   serializedVersion: 4

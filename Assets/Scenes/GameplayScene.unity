@@ -217,7 +217,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148231200}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.940001, y: 1.56, z: 0}
+  m_LocalPosition: {x: -5.5, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -297,19 +297,19 @@ MonoBehaviour:
 
 
     - Click on the "Discard" button to discard a card from the
-    draw pile to the discard pile
+    Draw pile or Discard pile
 
 
-    - Any face-up cards on the pyramid can be
-    paired together
+    - Any face-up cards on the pyramid can be paired
+    together
 
 
-    - The top card on the discard pile can also be paired with
-    any card in the pyramid
+    - The top card on the Discard pile can also be paired with any
+    card in the pyramid
 
 
-    - If you remove all the cards from the pyramid,
-    you have won!'
+    - If you remove all the cards from the pyramid, you
+    have won!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 464b3d9272f8b9c4aac87f5b250569ee, type: 2}
   m_sharedMaterial: {fileID: 5103969311853760714, guid: 464b3d9272f8b9c4aac87f5b250569ee, type: 2}
@@ -621,7 +621,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &481171449
 GameObject:
@@ -647,13 +647,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481171449}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: 1.7, z: 0.049646113}
+  m_LocalPosition: {x: 0, y: 0, z: 0.049646113}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1501022107}
   - {fileID: 1776300705}
   - {fileID: 148231203}
+  - {fileID: 2055392952}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -731,7 +732,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 360.45007, y: 10.000002}
-  m_SizeDelta: {x: 740.9, y: 332.99}
+  m_SizeDelta: {x: 740.9, y: 439.94}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &514454785
 MonoBehaviour:
@@ -782,8 +783,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 120
-  m_fontSizeBase: 120
+  m_fontSize: 132
+  m_fontSizeBase: 132
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -794,7 +795,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 20
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -1078,7 +1079,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 737.6, y: -30.93}
+  m_AnchoredPosition: {x: 690, y: -30.93}
   m_SizeDelta: {x: 220, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &685629483
@@ -1201,7 +1202,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2786724735537045132, guid: 67b7234bef3dd9b4bb81e1a096c9addc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 772.3
+      value: 690
       objectReference: {fileID: 0}
     - target: {fileID: 2786724735537045132, guid: 67b7234bef3dd9b4bb81e1a096c9addc, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1458,19 +1459,19 @@ MonoBehaviour:
 
 
     - Click on the "Discard" button to discard a card from the
-    draw pile to the discard pile
+    Draw pile or Discard pile
 
 
-    - Any face-up cards on the pyramid can be
-    paired together
+    - Any face-up cards on the pyramid can be paired
+    together
 
 
-    - The top card on the discard pile can also be paired with
-    any card in the pyramid
+    - The top card on the Discard pile can also be paired with any
+    card in the pyramid
 
 
-    - If you remove all the cards from the pyramid,
-    you have won!'
+    - If you remove all the cards from the pyramid, you
+    have won!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 464b3d9272f8b9c4aac87f5b250569ee, type: 2}
   m_sharedMaterial: {fileID: 5103969311853760714, guid: 464b3d9272f8b9c4aac87f5b250569ee, type: 2}
@@ -1871,7 +1872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2786724735537045132, guid: 67b7234bef3dd9b4bb81e1a096c9addc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 772.3
+      value: 690
       objectReference: {fileID: 0}
     - target: {fileID: 2786724735537045132, guid: 67b7234bef3dd9b4bb81e1a096c9addc, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1959,7 +1960,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1033504028 stripped
 GameObject:
@@ -2037,7 +2038,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1139194704
 GameObject:
@@ -2110,11 +2111,12 @@ MonoBehaviour:
   drawPile: {fileID: 1501022106}
   discardPile: {fileID: 1776300704}
   wastePile: {fileID: 148231202}
-  pyramidTop: {x: -1.6, y: 2, z: 0}
+  pyramidTop: {fileID: 2055392952}
   x_pyramidSpace: 1.3
   y_pyramidSpace: 0.6
   ui: {fileID: 946647362}
   remainingCards: 0
+  drawPileEmpty: 0
 --- !u!4 &1187618031
 Transform:
   m_ObjectHideFlags: 0
@@ -2221,7 +2223,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501022105}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5.34, y: 1.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2416,11 +2418,11 @@ RectTransform:
   m_Father: {fileID: 1139194705}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -869.25085, y: -41.13}
-  m_SizeDelta: {x: 740.9001, y: 332.99}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: -1139.45, y: 0.0000038146973}
+  m_SizeDelta: {x: 0, y: 332.99}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &1776300703
 GameObject:
   m_ObjectHideFlags: 0
@@ -2463,7 +2465,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776300703}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3, y: 0, z: 0}
+  m_LocalPosition: {x: 3, y: 1.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2767,7 +2769,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 370.45, y: 0}
-  m_SizeDelta: {x: 740.9, y: 332.99}
+  m_SizeDelta: {x: 740.9, y: 439.94}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &2030814133
 MonoBehaviour:
@@ -2818,8 +2820,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 120
-  m_fontSizeBase: 120
+  m_fontSize: 132
+  m_fontSizeBase: 132
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -2830,7 +2832,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 20
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -2868,6 +2870,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030814131}
   m_CullTransparentMesh: 1
+--- !u!1 &2055392951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2055392952}
+  m_Layer: 0
+  m_Name: CardPyramid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2055392952
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055392951}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.6, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 481171450}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2786724735455387894
 PrefabInstance:
   m_ObjectHideFlags: 0

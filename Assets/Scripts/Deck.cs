@@ -60,10 +60,15 @@ public class Deck : MonoBehaviour
             topCard = null;
             if (deckName == "DrawPile")
             {
-                //Remove the Discard button if there are no cards left in the discard pile
-                //gameManager.ui.DrawPileIsEmpty();
+                //If the draw pile is empty, start discarding from the discard pile
                 solitaire.DrawPileIsEmpty();
             }
+            else if(deckName == "DiscardPile" && solitaire.drawPileEmpty)
+            {
+                //Remove the Discard button if there are no cards left in the discard pile
+                gameManager.ui.RemoveDiscardButton();
+            }
+
         }
     }
 

@@ -30,9 +30,9 @@ public class UIManager : MonoBehaviour
         titleShadowTxt.gameObject.SetActive(false);
     }
 
+    //When the player wins the game, tell the player they won and remove the gameplay buttons
     public void WinGame()
     {
-        //When the player wins the game, tell the player they won and remove the gameplay buttons
         titleTxt.gameObject.SetActive(true);
         titleShadowTxt.gameObject.SetActive(true);
 
@@ -42,11 +42,13 @@ public class UIManager : MonoBehaviour
         titleShadowTxt.text = "You won!";
     }
 
-    public void DrawPileIsEmpty()
+    //The draw pile and discard pile are both empty, so there are no more cards left to discard 
+    public void RemoveDiscardButton()
     {
         discardButton.SetActive(false);
     }
 
+    //Begin the game but don't allow player input yet
     public void PrepareNewGame()
     {
         playButton.SetActive(false);
@@ -64,6 +66,7 @@ public class UIManager : MonoBehaviour
         
     }
 
+    //When the player can start playing the game
     public void StartPlaying()
     {
         discardButton.SetActive(true);
@@ -73,6 +76,7 @@ public class UIManager : MonoBehaviour
         infoShadowTxt.gameObject.SetActive(true);
     }
 
+    //Updates the info UI to show how many cards are remaining
     public void ShowRemainingCards(int remaining)
     {
         infoTxt.text = remaining.ToString() + " cards remaining";
