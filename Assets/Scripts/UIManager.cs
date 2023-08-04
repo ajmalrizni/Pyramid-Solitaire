@@ -38,8 +38,8 @@ public class UIManager : MonoBehaviour
 
         discardButton.SetActive(false);
 
-        titleTxt.text = "You won!";
-        titleShadowTxt.text = "You won!";
+        titleTxt.text = "You won! :)";
+        titleShadowTxt.text = "You won! :)";
     }
 
     //The draw pile and discard pile are both empty, so there are no more cards left to discard 
@@ -79,7 +79,17 @@ public class UIManager : MonoBehaviour
     //Updates the info UI to show how many cards are remaining
     public void ShowRemainingCards(int remaining)
     {
-        infoTxt.text = remaining.ToString() + " cards remaining";
-        infoShadowTxt.text = remaining.ToString() + " cards remaining";
+        string remainingTxt;
+        if (remaining > 1)
+        {
+            remainingTxt = remaining.ToString() + " cards remaining";
+
+        }
+        else
+        {
+            remainingTxt = "ONLY ONE CARD LEFT!";
+        }
+        infoTxt.text = remainingTxt;
+        infoShadowTxt.text = remainingTxt;
     }
 }
