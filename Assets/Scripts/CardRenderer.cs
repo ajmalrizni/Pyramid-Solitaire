@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class CardRenderer : MonoBehaviour
 {
+    //References to the card's SpriteRenderer components
     public SpriteRenderer cardRend;
     public SpriteRenderer shadowRend;
     public SpriteRenderer outlineRend;
 
+    //The card's height from the floor without the jump height
     public float height;
+    //The card's height from the floor with the jump height
     public float realHeight;
 
     public Card card;
@@ -20,7 +23,7 @@ public class CardRenderer : MonoBehaviour
     private Vector3 cardScaleVelocity;
     public Vector3 HighlightScale;
 
-    public float flipDuration = 2f;
+    public float jumpMultiplier = 2f;
     
     // Start is called before the first frame update
     void Awake()
@@ -35,6 +38,7 @@ public class CardRenderer : MonoBehaviour
 
     public void SetCardSprite(Sprite frontSprite, Sprite backSprite)
     {
+        //Change the card's sprites to the ones assigned
         frontFace = frontSprite;
         backFace = backSprite;
 
@@ -45,6 +49,7 @@ public class CardRenderer : MonoBehaviour
 
     public void Highlight()
     {
+        //Highlight the card by changing the card's render colour, outline colour, and scale
         cardRend.color = card.gameManager.highlightCardColor;
         outlineRend.color = card.gameManager.highlightOutlineColor;
         currentCardSize = HighlightScale;
@@ -52,6 +57,7 @@ public class CardRenderer : MonoBehaviour
 
     public void Unhighlight()
     {
+        //Reset the card's colour, outline colour, and scale
         cardRend.color = card.gameManager.normalCardColor;
         outlineRend.color = card.gameManager.normalOutlineColor;
         currentCardSize = Vector3.one;
@@ -59,6 +65,7 @@ public class CardRenderer : MonoBehaviour
 
     public void Select()
     {
+        //Select the card by changing the card's render colour, outline colour, and scale
         cardRend.color = card.gameManager.selectedCardColor;
         outlineRend.color = card.gameManager.highlightOutlineColor;
         currentCardSize = HighlightScale;
@@ -74,6 +81,7 @@ public class CardRenderer : MonoBehaviour
 
         if (card.isMoving)
         {
+            //Make the card jump up while moving for visual effect
             float totaltDist = Vector3.Distance(card.startPosition, card.targetPosition);
             float completedDist = Vector3.Distance(transform.position, card.targetPosition);
             float completionRatio = completedDist / totaltDist;
@@ -81,17 +89,20 @@ public class CardRenderer : MonoBehaviour
 
             if (card.isFlipping)
             {
+                //If the card is flipping while moving, rotate the transform
                 float cardAngle = Mathf.LerpAngle(0f, 180f, completionRatio);
                 transform.eulerAngles = new Vector3(0, cardAngle, 0);
 
                 if (cardAngle >= 90f)
                 {
+                    //Change the card sprite to its front face sprite
                     cardRend.sprite = frontFace;
                 }
             }
         }
 
-        realHeight = height + jumpOffset;
+        //Move the card transforms to the required position
+        realHeight = height + jumpOffset * jumpMultiplier;
         cardRend.transform.position = transform.position + new Vector3(0f, realHeight, -realHeight);
         shadowRend.transform.position = transform.position + new Vector3(realHeight, -realHeight, 0.1f);
     }
