@@ -301,15 +301,19 @@ MonoBehaviour:
 
 
     - Any face-up cards on the pyramid can be paired
-    together
+    together if their values add up to 13
 
 
-    - The top card on the Discard pile can also be paired with any
-    card in the pyramid
+    - Aces are worth 1, Jacks 11, and
+    Queens 12. Kings are worth 13 and can be removed without pairing
 
 
-    - If you remove all the cards from the pyramid, you
-    have won!'
+    - The
+    top card on the Discard pile can also be paired with any card in the pyramid
+
+
+    -
+    If you remove all the cards from the pyramid, you have won!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 464b3d9272f8b9c4aac87f5b250569ee, type: 2}
   m_sharedMaterial: {fileID: 5103969311853760714, guid: 464b3d9272f8b9c4aac87f5b250569ee, type: 2}
@@ -1319,7 +1323,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ajmal Rizni 02.08.23
+  m_text: Ajmal Rizni 04.08.23
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 464b3d9272f8b9c4aac87f5b250569ee, type: 2}
   m_sharedMaterial: {fileID: 5103969311853760714, guid: 464b3d9272f8b9c4aac87f5b250569ee, type: 2}
@@ -1463,15 +1467,19 @@ MonoBehaviour:
 
 
     - Any face-up cards on the pyramid can be paired
-    together
+    together if their values add up to 13
 
 
-    - The top card on the Discard pile can also be paired with any
-    card in the pyramid
+    - Aces are worth 1, Jacks 11, and
+    Queens 12. Kings are worth 13 and can be removed without pairing
 
 
-    - If you remove all the cards from the pyramid, you
-    have won!'
+    - The
+    top card on the Discard pile can also be paired with any card in the pyramid
+
+
+    -
+    If you remove all the cards from the pyramid, you have won!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 464b3d9272f8b9c4aac87f5b250569ee, type: 2}
   m_sharedMaterial: {fileID: 5103969311853760714, guid: 464b3d9272f8b9c4aac87f5b250569ee, type: 2}
@@ -1606,7 +1614,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ajmal Rizni 03.08.23
+  m_text: Ajmal Rizni 04.08.23
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 464b3d9272f8b9c4aac87f5b250569ee, type: 2}
   m_sharedMaterial: {fileID: 5103969311853760714, guid: 464b3d9272f8b9c4aac87f5b250569ee, type: 2}
@@ -1720,6 +1728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardPrefab: {fileID: 8986842908233725932, guid: aa89d55f67668a7418c7b93d24d36bc7, type: 3}
+  ui: {fileID: 0}
   cardSprites: []
   backfaceSpriteRed: {fileID: -1877620, guid: f42993db4c6d8c54da901cd2d209cd01, type: 3}
   backfaceSpriteBlack: {fileID: -372933970, guid: f42993db4c6d8c54da901cd2d209cd01, type: 3}
@@ -1728,7 +1737,6 @@ MonoBehaviour:
   selectedCardColor: {r: 1, g: 0.8561377, b: 0, a: 1}
   normalOutlineColor: {r: 0.1792453, g: 0.094131954, b: 0.094131954, a: 0.5019608}
   highlightOutlineColor: {r: 0.23584908, g: 0.08352989, b: 0, a: 1}
-  ui: {fileID: 0}
   cardThickness: 0.01
 --- !u!4 &946647360
 Transform:

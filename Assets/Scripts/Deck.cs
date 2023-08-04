@@ -118,12 +118,12 @@ public class Deck : MonoBehaviour
         //Fill the deck and assign the correct suits and values
         for (int i = 0; i < 52; i++)
         {
-            Card.Suits suite = (Card.Suits)((decimal)i / 13);
+            Card.Suits _suit = (Card.Suits)(i / 13);
             int val = i % 13 + 1;
 
             GameObject newCardObject = Instantiate(gameManager.cardPrefab,transform.position,Quaternion.identity, transform);
             Card newCard = newCardObject.GetComponent<Card>();
-            newCard.InitializeCard(val, suite);
+            newCard.InitializeCard(val, _suit);
             newCard.currentDeck = this;
             cardList.Add(newCard);
             ShuffleDeck(); //Shuffle the new deck so every game is unique
