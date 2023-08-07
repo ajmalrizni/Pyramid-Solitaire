@@ -40,6 +40,9 @@ public class UIManager : MonoBehaviour
 
         titleTxt.text = "You won! :)";
         titleShadowTxt.text = "You won! :)";
+
+        infoTxt.gameObject.SetActive(false);
+        infoShadowTxt.gameObject.SetActive(false);
     }
 
     //The draw pile and discard pile are both empty, so there are no more cards left to discard 
